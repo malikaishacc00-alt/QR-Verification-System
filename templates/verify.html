@@ -71,10 +71,9 @@ DOCUMENT INFORMATION
 BUSINESS DETAILS
 </div>
 
-<p>Company Name: [COMPANY NAME]</p>
+<p>Company Name: {{ document.company }}</p>
 
-<p>Business Activity: [BUSINESS ACTIVITY]</p>
-
+<p>Business Activity: {{ document.activity }}</p>
 </div>
 
 
@@ -84,10 +83,8 @@ BUSINESS DETAILS
 EMPLOYEE DETAILS
 </div>
 
-<p>Name: [EMPLOYEE NAME]</p>
-
-<p>Passport / ID: [DOCUMENT NUMBER]</p>
-
+<p>Name: {{ document.employee }}</p>
+<p>Passport / ID: {{ document.passport }}</p>
 </div>
 
 
@@ -97,14 +94,10 @@ EMPLOYEE DETAILS
 CONTRACT DETAILS
 </div>
 
-<p>Contract Type: [CONTRACT TYPE]</p>
-
-<p>Duration: [CONTRACT PERIOD]</p>
-
-<p>Working Hours: [WORK HOURS]</p>
-
-<p>Salary: [SALARY]</p>
-
+<p>Contract Type: {{ document.contract }}</p>
+<p>Duration: {{ document.period }}</p>
+<p>Working Hours: {{ document.hours }}</p>
+<p>Salary: {{ document.salary }}</p>
 </div>
 
 
