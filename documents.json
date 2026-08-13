@@ -1,0 +1,14 @@
+{
+    "DOC-2026-0001": {
+        "status": "VALID DOCUMENT",
+        "company": "ABC Company",
+        "activity": "Technology Services",
+        "employee": "John Smith",
+        "passport": "P1234567",
+        "contract": "Full Time",
+        "period": "2026-2027",
+        "hours": "40 Hours",
+        "salary": "$3000",
+        "date": "12-08-2026"
+    }
+}
