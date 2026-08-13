@@ -102,7 +102,21 @@ CONTRACT DETAILS
 
 
 <div class="verify">
+<div class="section">
+    <div class="title">
+        QR VERIFICATION
+    </div>
 
+    <div style="text-align: center; margin-top: 20px;">
+        <img
+            src="{{ url_for('generate_qr', document_id=document_id) }}"
+            alt="Document QR Code"
+            width="200"
+        >
+
+        <p>Scan this QR code to verify this document.</p>
+    </div>
+</div>
 ✓ DIGITAL VERIFICATION
 
 <br><br>
