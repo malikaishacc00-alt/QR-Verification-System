@@ -29,7 +29,7 @@ def verify_document(document_id):
     documents = load_documents()
 
     if document_id not in documents:
-        return "INVALID DOCUMENT", 404
+        return render_template("invalid.html"), 404
 
     document = documents[document_id]
 
