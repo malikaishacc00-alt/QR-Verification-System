@@ -4,341 +4,722 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ατομική Σύμβαση Εργασίας - Ψηφιακή Επαλήθευση</title>
+<title>Ατομική Σύμβαση Εργασίας</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: white;
-    margin: 20px;
     color: #111;
+    margin: 10px;
+    font-size: 14px;
 }
 
-.container {
-    border: 1px solid black;
-    padding: 25px;
-    max-width: 800px;
+.document {
+    max-width: 1500px;
     margin: auto;
+    border: 1px solid black;
+    padding: 10px;
 }
 
-h1 {
+/* =========================
+   HEADER
+========================= */
+
+.header {
     text-align: center;
-    font-size: 22px;
-    line-height: 1.5;
+    margin-bottom: 10px;
 }
+
+.header h1 {
+    font-size: 26px;
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 17px;
+    margin: 3px 0 8px;
+    font-weight: bold;
+}
+
+/* =========================
+   TWO COLUMN LAYOUT
+========================= */
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 
 .section {
     border: 1px solid black;
-    margin-top: 20px;
-    padding: 15px;
+    margin-bottom: 10px;
 }
 
-.title {
+.section-title {
+    font-size: 17px;
     font-weight: bold;
+    padding: 8px 12px;
     border-bottom: 1px solid black;
-    padding-bottom: 7px;
-    margin-bottom: 12px;
 }
+
+.section-content {
+    padding: 10px 12px;
+}
+
+/* =========================
+   FIELDS
+========================= */
 
 .field {
-    margin: 9px 0;
-    line-height: 1.5;
+    display: grid;
+    grid-template-columns: minmax(170px, 42%) 20px 1fr;
+    margin: 8px 0;
+    line-height: 1.35;
 }
 
 .label {
     font-weight: bold;
 }
 
-.verify {
-    margin-top: 25px;
-    border: 2px solid black;
-    padding: 15px;
+.separator {
     text-align: center;
 }
 
-.qr-box {
-    margin-top: 20px;
+.value {
+    word-break: break-word;
 }
 
-.qr-box img {
-    width: 200px;
-    max-width: 100%;
+/* =========================
+   BUSINESS
+========================= */
+
+.business-field {
+    display: grid;
+    grid-template-columns: 250px 20px 1fr;
+    margin: 12px 0;
+    line-height: 1.5;
 }
 
-.note {
+.business-field .value {
     font-size: 14px;
-    margin-top: 15px;
 }
 
-.private-label {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature .field {
+    grid-template-columns: 180px 20px 1fr;
 }
+
+/* =========================
+   QR VERIFICATION
+========================= */
+
+.verification {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.verification-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-bottom: 1px solid black;
+}
+
+.verification-content {
+    padding: 15px;
+}
+
+.qr-layout {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.qr-image {
+    text-align: center;
+}
+
+.qr-image img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.qr-text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.document-code {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.document-code-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.document-code-value {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.verification-date {
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .field,
+    .business-field {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .label {
+        margin-bottom: 2px;
+    }
+
+}
+
 </style>
 </head>
 
+
 <body>
 
-<div class="container">
+<div class="document">
 
-<h1>
-ΑΤΟΜΙΚΗ ΣΥΜΒΑΣΗ ΕΡΓΑΣΙΑΣ<br>
-INDIVIDUAL EMPLOYMENT CONTRACT
-</h1>
+    <!-- =========================
+         HEADER
+    ========================== -->
 
+    <div class="header">
 
-<div class="section">
+        <h1>
+            ΑΤΟΜΙΚΗ ΣΥΜΒΑΣΗ ΕΡΓΑΣΙΑΣ
+        </h1>
 
-<div class="title">
-ΣΤΟΙΧΕΙΑ ΕΓΓΡΑΦΟΥ / DOCUMENT INFORMATION
-</div>
+        <p>
+            (άρθρα 12 του Ν. 4052/2012 και 3 του Ν. 4251/2014)
+        </p>
 
-<div class="field">
-<span class="label">Κωδικός εγγράφου / Document Code:</span>
-{{ document_id }}
-</div>
+    </div>
 
-<div class="field">
-<span class="label">Κατάσταση / Status:</span>
-{{ document.status }}
-</div>
 
-</div>
+    <div class="columns">
 
 
-<div class="section">
+        <!-- ==================================================
+             LEFT COLUMN
+        =================================================== -->
+
+        <div class="left-column">
+
 
-<div class="title">
-ΕΚΠΡΟΣΩΠΟΣ ΤΗΣ ΕΠΙΧΕΙΡΗΣΗΣ / REPRESENTATIVE OF THE BUSINESS
-</div>
+            <!-- REPRESENTATIVE -->
 
-<div class="field">
-<span class="label">ΟΝΟΜ/ΜΟ / FULL NAME:</span>
-{{ document.representative_name }}
-</div>
+            <div class="section">
 
-<div class="field">
-<span class="label">Δ/ΝΣΗ ΚΑΤΟΙΚΙΑΣ / HOME ADDRESS:</span>
-{{ document.representative_address }}
-</div>
+                <div class="section-title">
+                    ΕΚΠΡΟΣΩΠΟΣ ΤΗΣ ΕΠΙΧΕΙΡΗΣΗΣ
+                </div>
 
-<div class="field">
-<span class="label">ΑΡ ΤΑΥΤΟΤΗΤΑΣ Ή ΔΙΑΒΑΤΗΡΙΟΥ / ID OR PASSPORT No.:</span>
-{{ document.representative_id }}
-</div>
+                <div class="section-content">
 
-<div class="field">
-<span class="label">ΑΦΜ / TAX ID:</span>
-{{ document.representative_tax_id }}
-</div>
+                    <div class="field">
+                        <span class="label">ΟΝΟΜ/ΜΟ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.representative_name }}
+                        </span>
+                    </div>
 
-</div>
+                    <div class="field">
+                        <span class="label">Δ/ΝΣΗ ΚΑΤΟΙΚΙΑΣ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.representative_address }}
+                        </span>
+                    </div>
 
+                    <div class="field">
+                        <span class="label">
+                            ΑΡ ΤΑΥΤΟΤΗΤΑΣ Ή ΔΙΑΒΑΤΗΡΙΟΥ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.representative_id }}
+                        </span>
+                    </div>
 
-<div class="section">
+                    <div class="field">
+                        <span class="label">ΑΦΜ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.representative_tax_id }}
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMPLOYEE -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    ΕΡΓΑΖΟΜΕΝΟΣ
+                </div>
+
+                <div class="section-content">
+
+                    <div class="field">
+                        <span class="label">ΟΝΟΜ/ΜΟ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.employee }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">ΟΝΟΜ/ΜΟ ΠΑΤΡ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.father_name }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">ΟΝΟΜ/ΜΟ ΜΗΤΡ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.mother_name }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">Δ/ΝΣΗ ΚΑΤΟΙΚΙΑΣ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.address }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">ΔΙΑΒΑΤΗΡΙΟΥ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.passport }}
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTRACT DETAILS -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    ΟΡΟΙ ΑΤΟΜΙΚΗΣ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ
+                </div>
+
+                <div class="section-content">
+
+                    <div class="field">
+                        <span class="label">ΕΙΔΟΣ ΣΥΜΒΑΣΗΣ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.contract }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">ΔΙΑΡΚΕΙΑ ΣΥΜΒΑΣΗΣ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.period }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΕΝΑΡΞΗ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.start }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΛΗΞΗ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.end }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΗΜΕΡΕΣ ΕΒΔΟΜΑΔΙΑΙΑΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.working_days }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΩΡΕΣ ΕΒΔΟΜΑΔΙΑΙΑΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.hours }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΧΡΟΝΟΣ ΗΜΕΡΗΣΙΑΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.daily_hours }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">ΩΡΑΡΙΟ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.schedule }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΤΟΠΟΣ ΠΑΡΟΧΗΣ ΕΡΓΑΣΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.workplace }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΕΙΔΟΣ ΑΠΑΣΧΟΛΗΣΗΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.employment_type }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΜΗΝΙΑΙΕΣ ΑΠΟΔΟΧΕΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.salary }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΥΨΟΣ ΕΝΔΕΧΟΜΕΝΟΥ ΕΠΙΔΟΜΑΤΟΣ ΑΔΕΙΑΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.leave_allowance }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΗΜΕΡΟΜΗΝΙΑ ΚΑΤΑΒΟΛΗΣ ΑΠΟΔΟΧΩΝ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.salary_payment_date }}
+                        </span>
+                    </div>
+
+                    <div class="field">
+                        <span class="label">
+                            ΗΜΕΡΟΜΗΝΙΑ ΚΑΤΑΡΤΙΣΗΣ ΣΥΜΒΑΣΗΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.contract_date }}
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             RIGHT COLUMN
+        =================================================== -->
+
+        <div class="right-column">
+
+
+            <!-- BUSINESS -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    ΕΠΙΧΕΙΡΗΣΗ
+                </div>
+
+                <div class="section-content">
+
+                    <div class="business-field">
+
+                        <span class="label">
+                            ΤΙΤΛΟΣ ΕΠΙΧΕΙΡΗΣΗΣ
+                        </span>
+
+                        <span class="separator">:</span>
+
+                        <span class="value">
+                            {{ document.company }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="business-field">
+
+                        <span class="label">
+                            ΔΡΑΣΤΗΡΙΟΤΗΤΑ ΕΠΙΧΕΙΡΗΣΗΣ
+                        </span>
+
+                        <span class="separator">:</span>
+
+                        <span class="value">
+                            {{ document.activity }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="business-field">
+
+                        <span class="label">
+                            ΕΔΡΑ ΕΠΙΧΕΙΡΗΣΗΣ
+                        </span>
+
+                        <span class="separator">:</span>
+
+                        <span class="value">
+                            {{ document.company_address }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="business-field">
+
+                        <span class="label">
+                            ΑΦΜ ΕΠΙΧΕΙΡΗΣΗΣ
+                        </span>
+
+                        <span class="separator">:</span>
+
+                        <span class="value">
+                            {{ document.company_tax_id }}
+                        </span>
+
+                    </div>
 
-<div class="title">
-ΕΡΓΑΖΟΜΕΝΟΣ / EMPLOYEE
-</div>
+                </div>
 
-<div class="field">
-<span class="label">ΟΝΟΜ/ΜΟ / FULL NAME:</span>
-{{ document.employee }}
-</div>
+            </div>
 
-<div class="field">
-<span class="label">ΟΝΟΜ/ΜΟ ΠΑΤΡ / FATHER'S FULL NAME:</span>
-{{ document.father_name }}
-</div>
 
-<div class="field">
-<span class="label">ΟΝΟΜ/ΜΟ ΜΗΤΡ / MOTHER'S FULL NAME:</span>
-{{ document.mother_name }}
-</div>
+            <!-- SIGNATURE -->
 
-<div class="field">
-<span class="label">Δ/ΝΣΗ ΚΑΤΟΙΚΙΑΣ / HOME ADDRESS:</span>
-{{ document.address }}
-</div>
+            <div class="section signature">
 
-<div class="field">
-<span class="label">ΔΙΑΒΑΤΗΡΙΟΥ / PASSPORT No.:</span>
-{{ document.passport }}
-</div>
+                <div class="section-title">
+                    ΥΠΟΓΡΑΦΗ
+                </div>
 
-</div>
+                <div class="section-content">
 
+                    <div class="field">
+                        <span class="label">ΟΝΟΜΑ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.signature_name }}
+                        </span>
+                    </div>
 
-<div class="section">
+                    <div class="field">
+                        <span class="label">ΠΑΤΡΩΝΥΜΟ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.signature_father_name }}
+                        </span>
+                    </div>
 
-<div class="title">
-ΟΡΟΙ ΑΤΟΜΙΚΗΣ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ / TERMS OF INDIVIDUAL EMPLOYMENT CONTRACT
-</div>
+                    <div class="field">
+                        <span class="label">ΑΦΜ</span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.signature_tax_id }}
+                        </span>
+                    </div>
 
-<div class="field">
-<span class="label">ΕΙΔΟΣ ΣΥΜΒΑΣΗΣ / CONTRACT TYPE:</span>
-{{ document.contract }}
-</div>
+                    <div class="field">
+                        <span class="label">
+                            ΗΜ. ΥΠΟΓΡΑΦΗΣ
+                        </span>
+                        <span class="separator">:</span>
+                        <span class="value">
+                            {{ document.signature_date }}
+                        </span>
+                    </div>
 
-<div class="field">
-<span class="label">ΔΙΑΡΚΕΙΑ ΣΥΜΒΑΣΗΣ / CONTRACT DURATION:</span>
-{{ document.period }}
-</div>
-
-<div class="field">
-<span class="label">ΕΝΑΡΞΗ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ / EMPLOYMENT START:</span>
-{{ document.start }}
-</div>
-
-<div class="field">
-<span class="label">ΛΗΞΗ ΣΥΜΒΑΣΗΣ ΕΡΓΑΣΙΑΣ / EMPLOYMENT END:</span>
-{{ document.end }}
-</div>
-
-<div class="field">
-<span class="label">ΗΜΕΡΕΣ ΕΒΔΟΜΑΔΙΑΙΑΣ ΕΡΓΑΣΙΑΣ / WORKING DAYS PER WEEK:</span>
-{{ document.working_days }}
-</div>
-
-<div class="field">
-<span class="label">ΩΡΕΣ ΕΒΔΟΜΑΔΙΑΙΑΣ ΕΡΓΑΣΙΑΣ / WORKING HOURS PER WEEK:</span>
-{{ document.hours }}
-</div>
-
-<div class="field">
-<span class="label">ΧΡΟΝΟΣ ΗΜΕΡΗΣΙΑΣ ΕΡΓΑΣΙΑΣ / DAILY WORKING HOURS:</span>
-{{ document.daily_hours }}
-</div>
+                </div>
 
-<div class="field">
-<span class="label">ΩΡΑΡΙΟ / WORK SCHEDULE:</span>
-{{ document.schedule }}
-</div>
+            </div>
 
-<div class="field">
-<span class="label">ΤΟΠΟΣ ΠΑΡΟΧΗΣ ΕΡΓΑΣΙΑΣ / PLACE OF WORK:</span>
-{{ document.workplace }}
-</div>
 
-<div class="field">
-<span class="label">ΕΙΔΟΣ ΑΠΑΣΧΟΛΗΣΗΣ / TYPE OF EMPLOYMENT:</span>
-{{ document.employment_type }}
-</div>
+            <!-- QR VERIFICATION -->
 
-<div class="field">
-<span class="label">ΜΗΝΙΑΙΕΣ ΑΠΟΔΟΧΕΣ / MONTHLY EARNINGS:</span>
-{{ document.salary }}
-</div>
+            <div class="verification">
 
-<div class="field">
-<span class="label">ΥΨΟΣ ΕΝΔΕΧΟΜΕΝΟΥ ΕΠΙΔΟΜΑΤΟΣ ΑΔΕΙΑΣ / LEAVE ALLOWANCE:</span>
-{{ document.leave_allowance }}
-</div>
+                <div class="verification-title">
+                    ΨΗΦΙΑΚΗ ΒΕΒΑΙΩΣΗ ΕΓΓΡΑΦΟΥ
+                </div>
 
-<div class="field">
-<span class="label">ΗΜΕΡΟΜΗΝΙΑ ΚΑΤΑΒΟΛΗΣ ΑΠΟΔΟΧΩΝ / SALARY PAYMENT DATE:</span>
-{{ document.salary_payment_date }}
-</div>
+                <div class="verification-content">
 
-<div class="field">
-<span class="label">ΗΜΕΡΟΜΗΝΙΑ ΚΑΤΑΡΤΙΣΗΣ ΣΥΜΒΑΣΗΣ / CONTRACT DATE:</span>
-{{ document.contract_date }}
-</div>
+                    <div class="qr-layout">
 
-</div>
+                        <div class="qr-image">
 
+                            <img
+                                src="{{ url_for('generate_qr', document_id=document_id) }}"
+                                alt="QR Κωδικός Επαλήθευσης"
+                            >
 
-<div class="section">
+                        </div>
 
-<div class="title">
-ΕΠΙΧΕΙΡΗΣΗ / BUSINESS
-</div>
 
-<div class="field">
-<span class="label">ΤΙΤΛΟΣ ΕΠΙΧΕΙΡΗΣΗΣ / BUSINESS NAME:</span>
-{{ document.company }}
-</div>
+                        <div class="qr-text">
 
-<div class="field">
-<span class="label">ΔΡΑΣΤΗΡΙΟΤΗΤΑ ΕΠΙΧΕΙΡΗΣΗΣ / BUSINESS ACTIVITY:</span>
-{{ document.activity }}
-</div>
+                            <p>
+                                Σκανάρετε τον κωδικό QR για να ελέγξετε
+                                αυτό το έγγραφο.
+                            </p>
 
-<div class="field">
-<span class="label">ΕΔΡΑ ΕΠΙΧΕΙΡΗΣΗΣ / BUSINESS ADDRESS:</span>
-{{ document.company_address }}
-</div>
 
-<div class="field">
-<span class="label">ΑΦΜ ΕΠΙΧΕΙΡΗΣΗΣ / BUSINESS TAX ID:</span>
-{{ document.company_tax_id }}
-</div>
+                            <div class="document-code">
 
-</div>
+                                <div class="document-code-title">
+                                    ΚΩΔΙΚΟΣ ΕΓΓΡΑΦΟΥ
+                                </div>
 
+                                <div class="document-code-value">
+                                    {{ document_id }}
+                                </div>
 
-<div class="section">
+                            </div>
 
-<div class="title">
-ΥΠΟΓΡΑΦΗ / SIGNATURE
-</div>
+                        </div>
 
-<div class="field">
-<span class="label">ΟΝΟΜΑ / NAME:</span>
-{{ document.signature_name }}
-</div>
+                    </div>
 
-<div class="field">
-<span class="label">ΠΑΤΡΩΝΥΜΟ / FATHER'S NAME:</span>
-{{ document.signature_father_name }}
-</div>
 
-<div class="field">
-<span class="label">ΑΦΜ / TAX ID:</span>
-{{ document.signature_tax_id }}
-</div>
+                    <div class="verification-date">
 
-<div class="field">
-<span class="label">ΗΜ. ΥΠΟΓΡΑΦΗΣ / SIGNATURE DATE:</span>
-{{ document.signature_date }}
-</div>
+                        ΗΜΕΡΟΜΗΝΙΑ ΕΚΔΟΣΗΣ :
+                        {{ document.date }}
 
-</div>
+                    </div>
 
+                </div>
 
-<div class="verify">
+            </div>
 
-<div class="title">
-ΨΗΦΙΑΚΗ ΕΠΑΛΗΘΕΥΣΗ / DIGITAL VERIFICATION
-</div>
+        </div>
 
-<div class="qr-box">
+    </div>
 
-<img
-    src="{{ url_for('generate_qr', document_id=document_id) }}"
-    alt="QR Verification Code"
->
 
-<p class="note">
-Σκανάρετε τον κωδικό QR για να ελέγξετε αυτό το έγγραφο.<br>
-Scan the QR code to verify this document.
-</p>
+    <!-- FOOTER -->
 
-</div>
-
-<br>
-
-<div class="field">
-<strong>Κωδικός εγγράφου / Document Code:</strong><br>
-{{ document_id }}
-</div>
-
-</div>
-
-<div class="private-label">
-ΨΗΦΙΑΚΗ ΕΠΑΛΗΘΕΥΣΗ / DIGITAL VERIFICATION
-</div>
+    <div class="footer">
+        Η παρούσα βεβαίωση έχει εκδοθεί ψηφιακά και δεν απαιτεί υπογραφή.
+    </div>
 
 </div>
 
