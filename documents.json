@@ -1,14 +1,41 @@
 {
     "DOC-2026-0001": {
         "status": "VALID DOCUMENT",
-        "company": "ABC Company",
-        "activity": "Technology Services",
-        "employee": "John Smith",
-        "passport": "P1234567",
-        "contract": "Full Time",
-        "period": "2026-2027",
-        "hours": "40 Hours",
-        "salary": "$3000",
-        "date": "12-08-2026"
+
+        "representative_name": "Marakas Konstantinnos",
+        "representative_address": "Gerani Chania Zip code 73014",
+        "representative_id": "A0977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Gyan Kumar Saday",
+        "father_name": "Dewan Sada Mushar",
+        "mother_name": "Paniya Debi Musharni",
+        "address": "Nepal",
+        "passport": "PA1579325",
+
+        "contract": "ΕΠΟΧΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΑΠΡΙΛΙΟΥ 2025 ΕΩΣ 31 ΔΕΚΕΜΒΡΙΟΥ 2025",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Καμαριέρα – Καθαρίστρια",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Ο ΜΑΡΑΚΑΣ ΞΕΝΟΔΟΧΕΙΑΚΕΣ ΤΟΥΡΙΣΤΙΚΕΣ ΕΜΠΟΡΙΚΕΣ ΚΑΙ ΒΙΟΜΗΧΑΝΙΚΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ Α.Ε",
+        "activity": "ΥΠΗΡΕΣΙΕΣ ΞΕΝΟΔΟΧΕΙΟΥ ΥΠΝΟΥ ΠΟΛΥΤΕΛΕΙΑΣ ΚΑΙ Α΄ ΚΑΤΗΓΟΡΙΑΣ ΜΕ ΕΣΤΙΑΤΟΡΙΟ",
+        "company_address": "ΑΓ ΜΑΡΙΝΑ ΧΑΝΙΑ ΤΚ 73100",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "12/02/2025 17:28:40"
     }
 }
