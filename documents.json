@@ -1,7 +1,6 @@
 {
     "DOC-2026-0001": {
         "status": "VALID DOCUMENT",
-
         "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
         "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
         "representative_id": "ΑΟ977174",
@@ -39,10 +38,8 @@
         "signature_date": "08/ 15/ 2026 17:28:40"
     },
 
-
     "DOC-2026-0002": {
         "status": "VALID DOCUMENT",
-
         "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
         "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
         "representative_id": "ΑΟ977174",
@@ -53,6 +50,201 @@
         "mother_name": "Tara Bishwakarma",
         "address": "Nepal",
         "passport": "PA2485693",
+
+        "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Συσκευαστής φρούτων",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Grab Job Trobalho Temporario LDA",
+        "activity": "Καλλιέργεια φυτών και λαχανικών. Καλλιέργεια και συγκομιδή φρούτων",
+        "company_address": "ΑΘΗΝΑ ΕΛΛΑΔΑ, ΣΑΟ ΤΕΟΤΟΝΙΟ ΠΟΡΤΟΓΑΛΙΑ",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "08/ 15/ 2026 17:28:40"
+    },
+
+    "DOC-2026-0003": {
+        "status": "VALID DOCUMENT",
+        "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+        "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
+        "representative_id": "ΑΟ977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Sanichara Chaudhary",
+        "father_name": "Fhahar Mahato",
+        "mother_name": "Seyni Chaudhary",
+        "address": "Nepal",
+        "passport": "PA3220563",
+
+        "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Συσκευαστής φρούτων",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Grab Job Trobalho Temporario LDA",
+        "activity": "Καλλιέργεια φυτών και λαχανικών. Καλλιέργεια και συγκομιδή φρούτων",
+        "company_address": "ΑΘΗΝΑ ΕΛΛΑΔΑ, ΣΑΟ ΤΕΟΤΟΝΙΟ ΠΟΡΤΟΓΑΛΙΑ",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "08/ 15/ 2026 17:28:40"
+    },
+    
+    "DOC-2026-0004": {
+        "status": "VALID DOCUMENT",
+        "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+        "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
+        "representative_id": "ΑΟ977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Shailesh Shrestha",
+        "father_name": "Krishna Kumar Shrestha",
+        "mother_name": "Bishnu Maya Shrestha",
+        "address": "Nepal",
+        "passport": "PA12156413",
+
+        "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Συσκευαστής φρούτων",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Grab Job Trobalho Temporario LDA",
+        "activity": "Καλλιέργεια φυτών και λαχανικών. Καλλιέργεια και συγκομιδή φρούτων",
+        "company_address": "ΑΘΗΝΑ ΕΛΛΑΔΑ, ΣΑΟ ΤΕΟΤΟΝΙΟ ΠΟΡΤΟΓΑΛΙΑ",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "08/ 15/ 2026 17:28:40"
+    },
+
+    "DOC-2026-0005": {
+        "status": "VALID DOCUMENT",
+        "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+        "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
+        "representative_id": "ΑΟ977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Sagar Bishwakarma",
+        "father_name": "Man Bahadur Bishwakarma",
+        "mother_name": "Hari Maya Bishwakarma",
+        "address": "Nepal",
+        "passport": "PA2867346",
+
+        "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Συσκευαστής φρούτων",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Grab Job Trobalho Temporario LDA",
+        "activity": "Καλλιέργεια φυτών και λαχανικών. Καλλιέργεια και συγκομιδή φρούτων",
+        "company_address": "ΑΘΗΝΑ ΕΛΛΑΔΑ, ΣΑΟ ΤΕΟΤΟΝΙΟ ΠΟΡΤΟΓΑΛΙΑ",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "08/ 15/ 2026 17:28:40"
+    },
+
+    "DOC-2026-0006": {
+        "status": "VALID DOCUMENT",
+        "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+        "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
+        "representative_id": "ΑΟ977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Ram Sunar",
+        "father_name": "Kailo Sunar",
+        "mother_name": "Mati Sara Sunar",
+        "address": "Nepal",
+        "passport": "PA12499691",
+
+        "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
+        "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
+        "start": "Από την είσοδο του αλλοδαπού στη χώρα",
+        "end": "Με τη λήξη της συνολικής περιόδου απασχόλησης",
+        "working_days": "ΠΕΝΤΕ",
+        "hours": "40 ΩΡΕΣ",
+        "daily_hours": "",
+        "schedule": "",
+        "workplace": "ΧΑΝΙΑ",
+        "employment_type": "Συσκευαστής φρούτων",
+        "salary": "1028,73 ΕΥΡΩ",
+        "leave_allowance": "",
+        "salary_payment_date": "",
+        "contract_date": "",
+
+        "company": "Grab Job Trobalho Temporario LDA",
+        "activity": "Καλλιέργεια φυτών και λαχανικών. Καλλιέργεια και συγκομιδή φρούτων",
+        "company_address": "ΑΘΗΝΑ ΕΛΛΑΔΑ, ΣΑΟ ΤΕΟΤΟΝΙΟ ΠΟΡΤΟΓΑΛΙΑ",
+        "company_tax_id": "094266312",
+
+        "signature_name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΡΑΚΑΣ",
+        "signature_father_name": "ΣΤΥΛΙΑΝΟΣ",
+        "signature_tax_id": "046538616",
+        "signature_date": "08/ 15/ 2026 17:28:40"
+    },
+
+    "DOC-2026-0007": {
+        "status": "VALID DOCUMENT",
+        "representative_name": "ΜΑΡΑΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+        "representative_address": "ΓΕΡΑΝΙ ΧΑΝΙΩΝ ΤΚ 73014",
+        "representative_id": "ΑΟ977174",
+        "representative_tax_id": "046538616",
+
+        "employee": "Purna Bahadur Lamsal",
+        "father_name": "Suk Bahadur Sarki",
+        "mother_name": "Suk Maya Sarki",
+        "address": "Nepal",
+        "passport": "PA1251313",
 
         "contract": "ΚΑΝΟΝΙΚΗ ΕΡΓΑΣΙΑ",
         "period": "01 ΟΚΤΩΒΡΙΟΥ 2026 ΕΩΣ 30 ΣΕΠΤΕΜΒΡΙΟΥ 2027",
